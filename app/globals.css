@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--plitz-primary: #a93756;
+	--plitz-secondary: #cdc6c3;
+	--plitz-body: #4b4b4b;
+	--plitz-accent: #a18e85;
+	--primary-font: futura-pt, 'sans-serif';
+	--secodary-font: Montserrat, 'sans';
+	--ternary-font: geom-graphic, 'sans-serif';
+}
+
+@layer base {
+	body {
+		color: var(--plitz-body);
+		font-family: var(--secodary-font);
+	}
+
+	section {
+		width: 95%;
+		max-width: 1500px;
+		margin: 0 auto;
+	}
+
+	p {
+		font-size: 1rem;
+		font-family: var(--secodary-font);
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: var(--plitz-accent);
+		font-family: var(--primary-font);
+		font-weight: 700;
+	}
+
+	h1 {
+		font-size: 4.375rem;
+		line-height: 1.1em;
+	}
+
+	h2 {
+		font-size: 4rem;
+		line-height: 1.3em;
+	}
+
+	h3 {
+		font-size: 3.4375rem;
+		line-height: 1.2em;
+	}
+
+	h4 {
+		font-size: 2.75rem;
+		line-height: 1.3em;
+	}
+
+	h5 {
+		font-size: 2.375rem;
+		line-height: 1.3em;
+	}
+
+	h6 {
+		font-size: 2rem;
+		line-height: 1.3em;
+	}
+
+	@media screen and (max-width: 768px) {
+		h1 {
+			font-size: 3.5rem;
+		}
+
+		h2 {
+			font-size: 3.1rem;
+		}
+
+		h3 {
+			font-size: 2.75rem;
+		}
+
+		h4 {
+			font-size: 2.35rem;
+		}
+	}
+
+	@media screen and (max-width: 500px) {
+		body,
+		p {
+			font-size: 0.87rem;
+		}
+
+		h1 {
+			font-size: 2.5rem;
+		}
+
+		h2 {
+			font-size: 2.2rem;
+		}
+
+		h3 {
+			font-size: 2rem;
+		}
+
+		h4 {
+			font-size: 1.9rem;
+		}
+	}
+}

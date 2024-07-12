@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 import { secondaryFont } from './resources/FontSettings';
+import Header from '@/components/ui/Header';
 
 export const metadata: Metadata = {
 	title: 'Reason4Hope | By Brenda Silva | Life Coach',
@@ -18,7 +19,10 @@ export default function RootLayout({
 			<head>
 				<link rel="stylesheet" href="https://use.typekit.net/tlw7mcc.css" />
 			</head>
-			<body className={`${secondaryFont.variable}`}>{children}</body>
+			<body className={`${secondaryFont.variable}`}>
+				<Header />
+				{children}
+			</body>
 		</html>
 	);
 }

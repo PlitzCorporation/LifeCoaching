@@ -27,7 +27,7 @@ const SolidButton = (props: SolidButtonProps) => {
 	const { label, onClick, href } = props;
 
 	const commonClasses =
-		'relative flex items-center bg-plitz-primary text-white px-9 py-3 rounded-xl border border-plitz-primary md:px-9 md:py-4 hover:border-plitz-accent hover:text-plitz-accent hover:bg-white transition-all group shadow-2xl';
+		'relative flex items-center bg-plitz-primary text-white px-5 py-3 hover:rounded-xl border border-plitz-primary md:px-7 lg:px-9 md:py-4 hover:border-plitz-accent hover:text-plitz-accent hover:bg-white transition-all hover:transition-all group shadow-2xl';
 
 	return href ? (
 		<Link href={href} className={commonClasses}>

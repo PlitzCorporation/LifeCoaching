@@ -4,11 +4,14 @@ import Link from 'next/link';
 import { getAllPages } from '@/helpers/pullPagesData';
 
 import { NavProps, PageProps } from '@/types/pages';
+import SolidButton from '../SolidButton';
 
 const Header = async () => {
 	const pages: PageProps[] = await getAllPages();
 
-	const menuPages: NavProps[] = [...pages].sort(
+	const filteredPages = pages.filter((page) => page.isMenu && page.isLive);
+
+	const menuPages: NavProps[] = filteredPages.sort(
 		(a, b) => a.position - b.position,
 	);
 
@@ -21,18 +24,20 @@ const Header = async () => {
 						className="w-[200px] h-[50px] block bg-plitz-body"
 					></Link>
 					<nav>
-						{menuPages.map(
-							(page) =>
-								page.isMenu &&
-								page.isLive && (
-									<Link
-										key={page._id}
-										href={page.label === 'Home' ? '/' : page.link}
-										className="text-plitz-primary font-plitz-font-main font-semibold"
-									>
-										{page.label}
-									</Link>
-								),
+						{menuPages.map((page) =>
+							!page.label.includes('Session') ? (
+								<Link
+									key={page._id}
+									href={page.label === 'Home' ? '/' : page.link}
+									className="text-plitz-primary my-7 md:my-0 md:ml-5 lg:ml-11 first:ml-0 font-plitz-font-main font-semibold"
+								>
+									{page.label}
+								</Link>
+							) : (
+								<div key={page._id} className="inline-flex md:ml-5 lg:ml-11">
+									<SolidButton label={page.label} href={page.link} />
+								</div>
+							),
 						)}
 					</nav>
 				</div>

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 import { secondaryFont } from './resources/FontSettings';
+
 import Header from '@/components/ui/Header';
 
 export const metadata: Metadata = {

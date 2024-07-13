@@ -4,7 +4,9 @@ import Link from 'next/link';
 import { getAllPages } from '@/helpers/pullPagesData';
 
 import { NavProps, PageProps } from '@/types/pages';
+
 import SolidButton from '../SolidButton';
+import MobileNav from './MobileNav';
 
 const Header = async () => {
 	const pages: PageProps[] = await getAllPages();
@@ -23,7 +25,7 @@ const Header = async () => {
 						href={'/'}
 						className="w-[200px] h-[50px] block bg-plitz-body"
 					></Link>
-					<nav>
+					<nav className="hidden md:block">
 						{menuPages.map((page) =>
 							!page.label.includes('Session') ? (
 								<Link
@@ -40,6 +42,10 @@ const Header = async () => {
 							),
 						)}
 					</nav>
+
+					<div className="h-full md:hidden">
+						<MobileNav navItems={menuPages} />
+					</div>
 				</div>
 			</div>
 		</header>

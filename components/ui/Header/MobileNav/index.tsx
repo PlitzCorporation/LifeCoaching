@@ -18,8 +18,6 @@ const MobileNav = (props: MobileNavProps) => {
 	const currentLocation = useParams();
 	const currentPath = currentLocation?.link ? currentLocation.link : '/';
 
-	console.log(currentLocation);
-
 	const [isOpen, setIsOpen] = useState(false);
 	const [opacity, setOpacity] = useState('opacity-0');
 

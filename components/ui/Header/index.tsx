@@ -7,6 +7,7 @@ import { NavProps, PageProps } from '@/types/pages';
 
 import SolidButton from '../SolidButton';
 import MobileNav from './MobileNav';
+import Reason4Hope from '@/components/logos/Reason4Hope';
 
 const Header = async () => {
 	const pages: PageProps[] = await getAllPages();
@@ -21,10 +22,9 @@ const Header = async () => {
 		<header className="shadow-plitz-box">
 			<div className="plitz-container">
 				<div className="flex justify-between flex-row items-center py-5">
-					<Link
-						href={'/'}
-						className="w-[200px] h-[50px] block bg-plitz-body"
-					></Link>
+					<Link href={'/'} className="block w-44 lg:w-52">
+						<Reason4Hope />
+					</Link>
 					<nav className="hidden md:block">
 						{menuPages.map((page) =>
 							!page.label.includes('Session') ? (

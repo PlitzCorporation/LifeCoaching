@@ -18,8 +18,9 @@
 		font-family: var(--secodary-font);
 	}
 
-	section {
-		width: 95%;
+	section,
+	.plitz-container {
+		width: 90%;
 		max-width: 1500px;
 		margin: 0 auto;
 	}
@@ -27,6 +28,18 @@
 	p {
 		font-size: 1rem;
 		font-family: var(--secodary-font);
+	}
+
+	a {
+		color: #fff;
+		text-decoration: none;
+		font-weight: 600;
+		transition: color 0.3s ease-out;
+	}
+
+	a:hover {
+		color: var(--plitz-yellow);
+		transition: color 0.3s ease-in;
 	}
 
 	h1,

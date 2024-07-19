@@ -26,10 +26,6 @@ const config: Config = {
 				'gradient-conic':
 					'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
 			},
-			dropShadow: {
-				'plitz-text': '0 5px 15px rgba(0,0,0,0.16)',
-				'plitz-darker': '0 3px 15px rgba(0,0,0,0.75)',
-			},
 			boxShadow: {
 				'plitz-box': '0 5px 15px rgba(0,0,0,0.16)',
 				'plitz-image': '0 0 25px rgba(0,0,0,0.75)',
@@ -43,12 +39,26 @@ const config: Config = {
 			borderWidth: {
 				10: '10px',
 			},
+			dropShadow: {
+				'plitz-text': '0 5px 15px rgba(0,0,0,0.16)',
+				'plitz-darker': '0 3px 15px rgba(0,0,0,0.75)',
+				'plitz-titles': '0 2px 10px rgba(0,0,0,0.9)',
+			},
+			height: {
+				150: '37.5rem',
+				200: '50rem',
+				250: '62.5rem',
+			},
 			keyframes: {
 				bounce: {
 					'0%': { transform: 'translateY(0)' },
 					'50%': { transform: 'translateY(100%)' },
 					'100%': { transform: 'translateY(-100%)' },
 				},
+			},
+			screens: {
+				'3xl': '1920px',
+				'4xl': '2560px',
 			},
 		},
 	},

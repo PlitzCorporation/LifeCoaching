@@ -79,7 +79,7 @@ const MobileNav = (props: MobileNavProps) => {
 			<div
 				className={`${
 					isOpen ? 'fixed' : 'hidden'
-				} ${opacity} bg-white opacity-95 left-0 top-[97px] h-[calc(100vh-90px)] w-screen p-20 z-40 transition-all duration-200`}
+				} ${opacity} bg-white opacity-95 left-0 top-[83px] h-[calc(100vh-83px)] w-screen p-20 z-40 transition-all duration-200`}
 			>
 				<nav>
 					<ul className="flex flex-col items-center list-none">

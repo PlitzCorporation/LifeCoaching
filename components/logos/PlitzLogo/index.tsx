@@ -5,10 +5,10 @@ const PlitzLogo = (props: SVGProps<SVGSVGElement>) => (
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 25" {...props}>
 		<defs>
 			<clipPath id="a">
-				<path fill="#efefef" d="M0 0h108.363v25H0z" data-name="Rectangle 4" />
+				<path d="M0 0h108.363v25H0z" data-name="Rectangle 4" />
 			</clipPath>
 		</defs>
-		<g fill="#efefef" clipPath="url(#a)">
+		<g clipPath="url(#a)">
 			<path
 				d="M11.548 17.791H4.619V25H0V.504c3.849 0 7.7-.035 11.548-.035 11.968 0 12 17.322 0 17.322m-6.929-4.236h6.929c5.914 0 5.879-8.679 0-8.679H4.619Z"
 				data-name="Path 1"

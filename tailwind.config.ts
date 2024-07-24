@@ -12,6 +12,7 @@ const config: Config = {
 			'plitz-secondary': '#CDC6C3',
 			'plitz-body': '#4B4B4B',
 			'plitz-accent': '#A18E85',
+			'plitz-silver': '#F2F2F2',
 			white: '#ffffff',
 		},
 		fontFamily: {

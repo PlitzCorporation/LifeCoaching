@@ -4,6 +4,7 @@ import './globals.css';
 import { secondaryFont } from './resources/FontSettings';
 
 import Header from '@/components/ui/Header';
+import { Footer } from '@/components/ui/Footer';
 
 export const metadata: Metadata = {
 	title: 'Reason4Hope | By Brenda Silva | Life Coach',
@@ -23,6 +24,7 @@ export default function RootLayout({
 			<body className={`${secondaryFont.variable}`}>
 				<Header />
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);

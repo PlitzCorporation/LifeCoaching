@@ -12,7 +12,9 @@ const Footer = async () => {
 	const pages: PageProps[] = await getAllPages();
 
 	const livePages = pages
-		.filter((page) => page.isLive)
+		.filter(
+			(page) => (page.isLive && page.isMenu) || (page.isLive && page.isSubmenu),
+		)
 		.sort((a, b) => a.position - b.position);
 
 	return (
@@ -33,7 +35,7 @@ const Footer = async () => {
 						</li>
 					))}
 				</ul>
-				<div className="flex flex-col lg:flex-row text-center justify-center items-center text-sm">
+				<div className="flex flex-col lg:flex-row text-center justify-center items-center text-sm text-balance">
 					2024 © Reason4Hope Coaching by Brenda Silva | Website by
 					<Link
 						href={'https://plitz7.com'}

@@ -28,7 +28,8 @@ const config: Config = {
 					'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
 			},
 			boxShadow: {
-				'plitz-box': '0 5px 15px rgba(0,0,0,0.16)',
+				'plitz-box-5-15': '0 5px 15px rgba(0,0,0,0.16)',
+				'plitz-box-4-32': '0 4px 32px rgba(35,25,77,0.16)',
 				'plitz-image': '0 0 25px rgba(0,0,0,0.75)',
 			},
 			borderRadius: {

@@ -19,7 +19,7 @@ const Header = async () => {
 	);
 
 	return (
-		<header className="shadow-plitz-box">
+		<header className="shadow-plitz-box-5-15">
 			<div className="plitz-container">
 				<div className="flex justify-between flex-row items-center py-5">
 					<Link href={'/'} className="block w-44 lg:w-52">

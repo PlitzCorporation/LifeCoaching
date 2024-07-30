@@ -13,7 +13,7 @@ const OutlinedButton = (props: OutlinedButtonProps) => {
 	const { label, onClick, href, disabled } = props;
 
 	const commonClasses =
-		'relative flex items-center bg-transparent text-white px-9 py-3 rounded-xl border border-plitz-primary hover:border-plitz-accent transition-all group shadow-2xl';
+		'relative flex items-center bg-transparent text-white px-9 py-3 lg:py-4 hover:rounded-xl border border-plitz-primary hover:border-plitz-accent transition-all group shadow-2xl';
 
 	const buttonOnly = disabled
 		? 'group:pointer-events-none pointer-events-none cursor-not-allowed'

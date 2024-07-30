@@ -10,11 +10,11 @@ export interface FeatureBoxesProps {
 const FeatureBoxes = (props: FeatureBoxesProps) => {
 	return (
 		<section className="relative z-10 -mt-4 lg:-mt-8 mb-9">
-			<div className="grid grid-cols-12 gap-8 lg:gap-12">
+			<div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
 				{props.boxesData.map((box) => (
 					<div
 						key={box._id}
-						className="col-span-12 lg:col-span-6 border-t-10 border-plitz-primary"
+						className="lg:col-span-6 border-t-10 border-plitz-primary"
 					>
 						<div className="bg-white py-9 lg:py-12 px-14 lg:px-18 shadow-plitz-box-4-32 h-full">
 							<Image

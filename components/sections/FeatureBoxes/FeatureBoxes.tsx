@@ -9,7 +9,7 @@ export interface FeatureBoxesProps {
 
 const FeatureBoxes = (props: FeatureBoxesProps) => {
 	return (
-		<section className="relative z-10 -mt-8 mb-9">
+		<section className="relative z-10 -mt-4 lg:-mt-8 mb-9">
 			<div className="grid grid-cols-12 gap-8 lg:gap-12">
 				{props.boxesData.map((box) => (
 					<div

@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AboutIntro should render 1`] = `
+<section
+  class=""
+  data-testid="AboutIntro"
+>
+  <div
+    class="grid grid-cols-1 lg:grid-cols-12 gap-14"
+  >
+    <div
+      class="h-full flex flex-col justify-center lg:col-span-7 text-balance"
+    >
+      <div
+        class="block w-32 h-1 bg-gradient-to-r from-plitz-primary/5 to-plitz-primary/100"
+      />
+      <p
+        class="text-plitz-primary font-bold mt-10 mb-5"
+      >
+        Hi, I am Brenda Silva
+      </p>
+      <h3
+        class="text-balance mb-10"
+      >
+        Welcome to Reason4Hope
+      </h3>
+      <div
+        class="whitespace-pre-wrap mb-12 lg:mb-16"
+      >
+        This is Brenda Silva´s Bio
+      </div>
+      <div
+        class="flex flex-col lg:flex-row items-center mb-5 gap-9"
+      >
+        <a
+          class="relative flex items-center bg-plitz-primary text-white px-5 py-3 hover:rounded-xl border border-plitz-primary md:px-7 lg:px-9 md:py-4 hover:border-plitz-accent hover:text-plitz-accent hover:bg-white transition-all hover:transition-all group shadow-2xl"
+          href="/about-reason4hope"
+        >
+          <span
+            class="translate-x-2 group-hover:-translate-x-1 transition-all"
+          >
+            More About Me
+          </span>
+          <svg
+            class="fill-white translate-x-0 opacity-0 group-hover:fill-plitz-accent group-hover:opacity-100 group-hover:translate-x-1 transition-all"
+            height="1em"
+            viewBox="0 0 448 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M440.6 273.4c4.7-4.5 7.4-10.8 7.4-17.4s-2.7-12.8-7.4-17.4l-176-168c-9.6-9.2-24.8-8.8-33.9.8s-8.8 24.8.8 33.9L364.1 232H24c-13.3 0-24 10.7-24 24s10.7 24 24 24h340.1L231.4 406.6c-9.6 9.2-9.9 24.3-.8 33.9s24.3 9.9 33.9.8l176-168z"
+            />
+          </svg>
+        </a>
+        <a
+          class="relative flex items-center bg-transparent text-white px-9 py-3 lg:py-4 hover:rounded-xl border border-plitz-primary hover:border-plitz-accent transition-all group shadow-2xl"
+          href="/reason-4-hope-coaching"
+        >
+          <span
+            class="translate-x-2 group-hover:-translate-x-1 transition-all text-plitz-primary group-hover:text-plitz-accent"
+          >
+            Book A Session
+          </span>
+          <svg
+            class="fill-plitz-primary translate-x-0 opacity-0 group-hover:fill-plitz-accent group-hover:opacity-100 group-hover:translate-x-1 transition-all"
+            height="1em"
+            viewBox="0 0 448 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M440.6 273.4c4.7-4.5 7.4-10.8 7.4-17.4s-2.7-12.8-7.4-17.4l-176-168c-9.6-9.2-24.8-8.8-33.9.8s-8.8 24.8.8 33.9L364.1 232H24c-13.3 0-24 10.7-24 24s10.7 24 24 24h340.1L231.4 406.6c-9.6 9.2-9.9 24.3-.8 33.9s24.3 9.9 33.9.8l176-168z"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div
+      class="lg:col-span-5"
+    >
+      <img
+        alt="uploads/Reason4Hope/image"
+        class="w-full max-w-96 mx-auto lg:max-w-full"
+        height="500"
+        priority="false"
+        src="https://thedavid.plitz7.com/uploads/Reason4Hope/image.jpg"
+        width="427"
+      />
+    </div>
+  </div>
+</section>
+`;

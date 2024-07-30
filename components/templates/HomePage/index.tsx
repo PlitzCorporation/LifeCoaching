@@ -3,7 +3,7 @@ import React from 'react';
 import { getPageByLink } from '@/helpers/pullPagesData';
 
 import { PageProps } from '@/types/pages';
-import { FeatureBoxes, HomeHero } from '@/components/sections';
+import { AboutIntro, FeatureBoxes, HomeHero } from '@/components/sections';
 
 const HomePage = async () => {
 	const pageData: PageProps = await getPageByLink('home');
@@ -19,10 +19,13 @@ const HomePage = async () => {
 		.filter((box) => box.esubtitle === 'featuredBox')
 		.sort((a, b) => a.eposition - b.eposition);
 
+	const aboutData = pageData.extraboxes.filter((box) => box.eposition === 3)[0];
+
 	return (
 		<main>
 			<HomeHero {...heroData} />
 			<FeatureBoxes boxesData={featuredBoxesData} />
+			<AboutIntro {...aboutData} />
 		</main>
 	);
 };

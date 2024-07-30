@@ -3,7 +3,12 @@ import React from 'react';
 import { getPageByLink } from '@/helpers/pullPagesData';
 
 import { PageProps } from '@/types/pages';
-import { AboutIntro, FeatureBoxes, HomeHero } from '@/components/sections';
+import {
+	AboutIntro,
+	FeatureBoxes,
+	HomeHero,
+	QuoteBlock,
+} from '@/components/sections';
 
 const HomePage = async () => {
 	const pageData: PageProps = await getPageByLink('home');
@@ -26,6 +31,7 @@ const HomePage = async () => {
 			<HomeHero {...heroData} />
 			<FeatureBoxes boxesData={featuredBoxesData} />
 			<AboutIntro {...aboutData} />
+			<QuoteBlock />
 		</main>
 	);
 };

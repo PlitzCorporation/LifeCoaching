@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuoteBlock should render correctly 1`] = `
+<div
+  class="bg-gradient-to-b from-plitz-accent to-plitz-secondary py-20 lg:py-40"
+>
+  <div
+    class=" max-w-screen-xl plitz-container drop-shadow-plitz-darker text-white text-balance"
+  >
+    <div
+      class="w-max mx-auto mb-8"
+    >
+      <div
+        class="block w-32 h-1 bg-gradient-to-r from-white/5 to-white/100"
+      />
+    </div>
+    <p
+      class="text-center text-2xl lg:text-4xl font-plitz-font-main font-bold"
+    >
+      My mission is to help uncover the core, the thing driving behavior and choices that have been imprinted in your life. What is the unmet emotional need that keeps you in a scramble? If you don’t understand or not aware, you won’t be empowered to flourish.
+    </p>
+  </div>
+</div>
+`;

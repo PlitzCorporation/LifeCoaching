@@ -16,7 +16,7 @@ const HomeHero = (props: HomeHeroProps) => {
 	const altText = altCreator(image);
 
 	return (
-		<div className="relative h-max md:h-200 lg:h-250 overflow-hidden 3xl:max-w-[95vw] mx-auto bg-plitz-primary">
+		<section className="relative h-max md:h-200 lg:h-250 overflow-hidden 3xl:max-w-[95vw] mx-auto bg-plitz-primary">
 			<div className="relative lg:absolute z-10 top-0 bottom-0 w-full">
 				<div className="plitz-container flex items-center h-full">
 					<div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
@@ -49,7 +49,7 @@ const HomeHero = (props: HomeHeroProps) => {
 					className="object-cover object-bottom min-w-full min-h-full max-w-full max-h-full"
 				/>
 			</div>
-		</div>
+		</section>
 	);
 };
 

@@ -2,7 +2,7 @@
 
 exports[`FeatureBoxes renders the correct number of boxes 1`] = `
 <section
-  class="relative z-10 -mt-4 lg:-mt-8 mb-9"
+  class="plitz-container relative z-10 -mt-4 lg:-mt-8 mb-9"
 >
   <div
     class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12"

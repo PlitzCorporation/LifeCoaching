@@ -6,6 +6,7 @@ interface SolidButtonProps {
 	label: string;
 	href?: string;
 	onClick?: () => void;
+	extraClasses?: string;
 }
 
 const ButtonIcon = () => {
@@ -24,18 +25,26 @@ const ButtonLabel = (props: { label: string }) => {
 };
 
 const SolidButton = (props: SolidButtonProps) => {
-	const { label, onClick, href } = props;
+	const { label, onClick, href, extraClasses } = props;
 
 	const commonClasses =
 		'relative flex items-center bg-plitz-primary text-white px-5 py-3 hover:rounded-xl border border-plitz-primary md:px-7 lg:px-9 md:py-4 hover:border-plitz-accent hover:text-plitz-accent hover:bg-white transition-all hover:transition-all group shadow-2xl';
 
 	return href ? (
-		<Link href={href} className={commonClasses}>
+		<Link
+			data-testid="aTag"
+			href={href}
+			className={`${commonClasses}${extraClasses ? ` ${extraClasses}` : ''}`}
+		>
 			<ButtonLabel label={label} />
 			<ButtonIcon />
 		</Link>
 	) : (
-		<button onClick={onClick} className={commonClasses}>
+		<button
+			data-testid="buttonTag"
+			onClick={onClick}
+			className={`${commonClasses}${extraClasses ? ` ${extraClasses}` : ''}`}
+		>
 			<ButtonLabel label={label} /> <ButtonIcon />
 		</button>
 	);

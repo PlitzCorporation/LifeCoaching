@@ -16,7 +16,7 @@ const AboutIntro = (props: AboutIntroProps) => {
 	const altText = altCreator(eimg as string);
 
 	return (
-		<section data-testid={testId} className="">
+		<section data-testid={testId} className="plitz-container">
 			<div className="grid grid-cols-1 lg:grid-cols-12 gap-14">
 				<div className="h-full flex flex-col justify-center lg:col-span-7 text-balance">
 					<BurgundyThickLine />

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`HomeHero renders the correct hero content 1`] = `
-<div
+<section
   class="relative h-max md:h-200 lg:h-250 overflow-hidden 3xl:max-w-[95vw] mx-auto bg-plitz-primary"
 >
   <div
@@ -54,5 +54,5 @@ exports[`HomeHero renders the correct hero content 1`] = `
       width="0"
     />
   </div>
-</div>
+</section>
 `;

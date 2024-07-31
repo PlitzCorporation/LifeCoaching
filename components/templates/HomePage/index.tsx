@@ -5,6 +5,7 @@ import { getPageByLink } from '@/helpers/pullPagesData';
 import { PageProps } from '@/types/pages';
 import {
 	AboutIntro,
+	CTARedBg,
 	FeatureBoxes,
 	HomeHero,
 	QuoteBlock,
@@ -32,6 +33,7 @@ const HomePage = async () => {
 			<FeatureBoxes boxesData={featuredBoxesData} />
 			<AboutIntro {...aboutData} />
 			<QuoteBlock />
+			<CTARedBg />
 		</main>
 	);
 };

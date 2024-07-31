@@ -2,7 +2,8 @@
 
 exports[`OutlinedButton matches snapshot 1`] = `
 <button
-  class="relative flex items-center bg-transparent text-white px-9 py-3 lg:py-4 hover:rounded-xl border border-plitz-primary hover:border-plitz-accent transition-all group shadow-2xlcursor-pointer"
+  class="relative flex items-center bg-transparent text-white px-9 py-3 lg:py-4 hover:rounded-xl border border-plitz-primary hover:border-plitz-accent transition-all group shadow-2xl cursor-pointer"
+  data-testid="buttonTag"
 >
   <span
     class="translate-x-2 group-hover:-translate-x-1 transition-all text-plitz-primary group-hover:text-plitz-accent"

@@ -12,6 +12,8 @@ import { CategoryProps } from '@/types/posts';
 const LatestPosts = async () => {
 	const posts: CategoryProps = await getPostsByCategory('home-featured');
 
+	if (!posts) return null;
+
 	const latestPosts = posts.items
 		.sort((a, b) => Date.parse(b.createdAt) - Date.parse(a.createdAt))
 		.slice(0, 3);

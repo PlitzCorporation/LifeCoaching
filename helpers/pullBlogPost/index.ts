@@ -30,3 +30,17 @@ export const getPostByLink = async (link: string) => {
 
 	return data;
 };
+
+export const getPostsByCategory = async (categoryLink: string) => {
+	const res = await fetch(
+		`${process.env.NEXT_PUBLIC_URL}/td/api/categories/${categoryLink}`,
+		{
+			next: { revalidate: 60 },
+			headers: { storedId: 'Reason4HopeCoaching' },
+		},
+	);
+
+	const data = await res.json();
+
+	return data;
+};

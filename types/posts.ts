@@ -58,6 +58,11 @@ export interface CategoryProps {
 }
 
 export interface PostsByCat {
-	label: string;
-	value: string;
+	_id: string;
+	isLive: boolean;
+	title: string;
+	link: string;
+	postintro: string;
+	featuredimg: string;
+	createdAt: string;
 }

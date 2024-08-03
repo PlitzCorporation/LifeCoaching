@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContentOnly renders component 1`] = `
+<div
+  class="bg-plitz-primary py-10 lg:py-20"
+>
+  <div
+    class="plitz-container text-balance text-center text-white"
+  >
+    <p>
+      Hello, I am Batman, but my real name is Bruce Wayne
+    </p>
+  </div>
+</div>
+`;

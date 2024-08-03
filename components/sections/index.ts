@@ -4,6 +4,8 @@ import AboutIntro from './AboutIntro';
 import QuoteBlock from './QuoteBlock';
 import CTARedBg from './CTARedBg';
 import LatestPosts from './LatestPosts';
+import InternalHero from './InternalHero';
+import ContentOnly from './ContentOnly';
 
 export {
 	HomeHero,
@@ -12,4 +14,6 @@ export {
 	QuoteBlock,
 	CTARedBg,
 	LatestPosts,
+	InternalHero,
+	ContentOnly,
 };

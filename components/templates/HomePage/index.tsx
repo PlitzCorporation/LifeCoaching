@@ -8,6 +8,7 @@ import {
 	CTARedBg,
 	FeatureBoxes,
 	HomeHero,
+	LatestPosts,
 	QuoteBlock,
 } from '@/components/sections';
 
@@ -33,6 +34,7 @@ const HomePage = async () => {
 			<FeatureBoxes boxesData={featuredBoxesData} />
 			<AboutIntro {...aboutData} />
 			<QuoteBlock />
+			<LatestPosts />
 			<CTARedBg />
 		</main>
 	);

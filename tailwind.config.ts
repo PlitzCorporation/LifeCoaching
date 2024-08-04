@@ -47,6 +47,7 @@ const config: Config = {
 				'plitz-titles': '0 2px 10px rgba(0,0,0,0.9)',
 			},
 			height: {
+				112: '28rem',
 				150: '37.5rem',
 				200: '50rem',
 				250: '62.5rem',

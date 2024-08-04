@@ -2,7 +2,7 @@ import React from 'react';
 
 import { getPageByLink } from '@/helpers/pullPagesData';
 
-import { ContentOnly, InternalHero } from '@/components/sections';
+import { ContentOnly, InternalHero, PostsList } from '@/components/sections';
 
 import { PageProps } from '@/types/pages';
 
@@ -19,6 +19,7 @@ const BlogPageTemplate = async () => {
 		<main>
 			<InternalHero {...heroData} />
 			<ContentOnly text={pageData.content} classes="text-center text-white" />
+			<PostsList />
 		</main>
 	);
 };

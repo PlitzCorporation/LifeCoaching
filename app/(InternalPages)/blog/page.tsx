@@ -1,10 +1,11 @@
 import { Metadata } from 'next';
 
 import { getPageByLink } from '@/helpers/pullPagesData';
+import stripHTML from '@/helpers/stripHTML';
+
+import BlogPageTemplate from '@/components/templates/BlogPage';
 
 import { PageProps } from '@/types/pages';
-import stripHTML from '@/helpers/stripHTML';
-import BlogPageTemplate from '@/components/templates/BlogPage';
 
 export const generateMetadata = async (): Promise<Metadata> => {
 	const blogPage: PageProps = await getPageByLink('blog');
@@ -21,7 +22,7 @@ export const generateMetadata = async (): Promise<Metadata> => {
 	};
 };
 
-const BlogPage = async () => {
+const BlogPage = () => {
 	return <BlogPageTemplate />;
 };
 

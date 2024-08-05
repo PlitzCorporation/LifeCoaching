@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PostMeta should render the component 1`] = `
+<div>
+  <small
+    class="text-plitz-primary mb-7 lg:mb-10"
+  >
+    By 
+    Bruce Wayne
+     |
+     
+    July 07, 1982
+  </small>
+</div>
+`;

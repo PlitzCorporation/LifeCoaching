@@ -6,6 +6,7 @@ import ImagePlacer from '@/components/ui/ImagePlacer';
 
 import { PostProps } from '@/types/posts';
 import SolidButton from '@/components/ui/SolidButton';
+import PostMeta from './PostMeta';
 
 const PostsList = async () => {
 	const allPosts: PostProps[] = await getAllBlogPosts();
@@ -27,14 +28,7 @@ const PostsList = async () => {
 							<div className="hidden lg:block h-[10px] bg-plitz-primary"></div>
 							<div className="h-full flex flex-col justify-center px-8 lg:px-20 py-8 lg:py-10">
 								<h3 className="text-balance mb-3 lg:mb-5">{post.title}</h3>
-								<small className="text-plitz-primary mb-7 lg:mb-10">
-									By {post.fullname} |{' '}
-									{new Date(post.createdAt).toLocaleDateString('en-US', {
-										month: 'long',
-										day: '2-digit',
-										year: 'numeric',
-									})}
-								</small>
+								<PostMeta fullname={post.fullname} createdAt={post.createdAt} />
 								<div
 									dangerouslySetInnerHTML={{ __html: post.postintro }}
 									className="text-plitz-body mb-7 lg:mb-10"

@@ -11,7 +11,7 @@ const ContentOnly = (props: ContentOnlyProps) => {
 		<div className="bg-plitz-primary py-10 lg:py-20">
 			<div
 				dangerouslySetInnerHTML={{ __html: text }}
-				className={`plitz-container text-balance ${props.classes}`}
+				className={`plitz-container text-balance whitespace-pre-wrap max-w-3xl ${props.classes}`}
 			></div>
 		</div>
 	);

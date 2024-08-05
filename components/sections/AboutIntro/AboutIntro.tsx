@@ -1,10 +1,13 @@
+import React from 'react';
+import Image from 'next/image';
+
+import altCreator from '@/helpers/altCreator';
+
 import BurgundyThickLine from '@/components/ui/decorations/BurgundyThickLine';
 import OutlinedButton from '@/components/ui/OutlinedButton';
 import SolidButton from '@/components/ui/SolidButton';
-import altCreator from '@/helpers/altCreator';
+
 import { ExtraBoxesProps } from '@/types/pages';
-import Image from 'next/image';
-import React from 'react';
 
 export interface AboutIntroProps extends ExtraBoxesProps {
 	testId?: string;

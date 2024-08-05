@@ -31,7 +31,11 @@ const InternalHero = (props: InternalHeroProps) => {
 
 			<div className="relative h-96 lg:absolute lg:h-150 w-full z-0">
 				<Image
-					src={`${process.env.NEXT_PUBLIC_CMS}/${props.bgImage}`}
+					src={
+						!props.bgImage.includes('placeholder')
+							? `${process.env.NEXT_PUBLIC_CMS}/${props.bgImage}`
+							: `/images/big-placeholder.jpg`
+					}
 					alt={altText}
 					width={0}
 					height={0}

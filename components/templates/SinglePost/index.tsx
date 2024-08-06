@@ -1,19 +1,22 @@
 import React from 'react';
+import { notFound } from 'next/navigation';
 
 import { getPostByLink } from '@/helpers/pullBlogPost';
 
 import PostMeta from '@/components/sections/PostsList/PostMeta';
 
-import { PostProps } from '@/types/posts';
 import ImagePlacer from '@/components/ui/ImagePlacer';
 import { CTARedBg } from '@/components/sections';
 import BurgundyThickLine from '@/components/ui/decorations/BurgundyThickLine';
+
 type SinglePostProps = {
 	link: string;
 };
 
 const SinglePostTemplate = async (props: SinglePostProps) => {
-	const postData: PostProps = await getPostByLink(props.link);
+	const postData = await getPostByLink(props.link);
+
+	if (!postData.title) return notFound();
 
 	return (
 		<main>

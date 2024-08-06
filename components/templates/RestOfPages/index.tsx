@@ -1,4 +1,5 @@
 import React from 'react';
+import { notFound } from 'next/navigation';
 
 import { getPageByLink } from '@/helpers/pullPagesData';
 
@@ -9,14 +10,16 @@ import {
 	InternalHero,
 } from '@/components/sections';
 
-import { PageProps } from '@/types/pages';
+import { ExtraBoxesProps } from '@/types/pages';
 type RestOfPagesTemplateProps = {
 	currentPage: string;
 };
 
 const RestOfPagesTemplate = async (props: RestOfPagesTemplateProps) => {
 	const { currentPage } = props;
-	const pageData: PageProps = await getPageByLink(currentPage);
+
+	const pageData = await getPageByLink(currentPage);
+	if (!pageData || pageData.message === 'Page not found') return notFound();
 
 	const heroData = {
 		title: pageData.title,
@@ -25,7 +28,7 @@ const RestOfPagesTemplate = async (props: RestOfPagesTemplateProps) => {
 	};
 
 	const customSectionOne = pageData.extraboxes.filter(
-		(box) => box.eposition === 1,
+		(box: ExtraBoxesProps) => box.eposition === 1,
 	)[0];
 
 	return (

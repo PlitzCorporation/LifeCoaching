@@ -5,7 +5,6 @@ import stripHTML from '@/helpers/stripHTML';
 
 import RestOfPagesTemplate from '@/components/templates/RestOfPages';
 
-import { PageProps } from '@/types/pages';
 export interface AllPagesProps {
 	params: {
 		link: string;
@@ -14,7 +13,17 @@ export interface AllPagesProps {
 export const generateMetadata = async ({
 	params,
 }: AllPagesProps): Promise<Metadata> => {
-	const currentPage: PageProps = await getPageByLink(params.link);
+	const currentPage = await getPageByLink(params.link);
+
+	if (!currentPage || currentPage.message === 'not found') {
+		return {
+			title: '404 Page Not Found',
+			description: '404 Page Not Found',
+			openGraph: {
+				images: [`https://thedavid.plitz7.com/404.jpg`],
+			},
+		};
+	}
 
 	const content = stripHTML(currentPage.content);
 	const shortContent = content.split(' ').slice(0, 25).join(' ');

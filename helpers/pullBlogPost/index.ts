@@ -1,5 +1,5 @@
 export const getAllBlogPosts = async () => {
-	const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/td/api/blogposts`, {
+	const res = await fetch(`${process.env.NEXT_PUBLIC_CMS}/api/blogposts`, {
 		next: { revalidate: 60 },
 		headers: { storedId: 'Reason4HopeCoaching' },
 	});
@@ -11,7 +11,7 @@ export const getAllBlogPosts = async () => {
 
 export const getPostByLink = async (link: string) => {
 	const res = await fetch(
-		`${process.env.NEXT_PUBLIC_URL}/td/api/blogposts/${link}`,
+		`${process.env.NEXT_PUBLIC_CMS}/api/blogposts/${link}`,
 		{
 			next: { revalidate: 60 },
 			headers: { storedId: 'Reason4HopeCoaching' },
@@ -33,7 +33,7 @@ export const getPostByLink = async (link: string) => {
 
 export const getPostsByCategory = async (categoryLink: string) => {
 	const res = await fetch(
-		`${process.env.NEXT_PUBLIC_URL}/td/api/categories/${categoryLink}`,
+		`${process.env.NEXT_PUBLIC_CMS}/api/categories/${categoryLink}`,
 		{
 			next: { revalidate: 60 },
 			headers: { storedId: 'Reason4HopeCoaching' },

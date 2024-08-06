@@ -1,5 +1,5 @@
 export const getAllPages = async () => {
-	const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/td/api/pages`, {
+	const res = await fetch(`${process.env.NEXT_PUBLIC_CMS}/api/pages`, {
 		next: { revalidate: 60 },
 		headers: { storedId: 'Reason4HopeCoaching' },
 	});
@@ -10,13 +10,10 @@ export const getAllPages = async () => {
 };
 
 export const getPageByLink = async (link: string) => {
-	const res = await fetch(
-		`${process.env.NEXT_PUBLIC_URL}/td/api/pages/${link}`,
-		{
-			next: { revalidate: 60 },
-			headers: { storedId: 'Reason4HopeCoaching' },
-		},
-	);
+	const res = await fetch(`${process.env.NEXT_PUBLIC_CMS}/api/pages/${link}`, {
+		next: { revalidate: 60 },
+		headers: { storedId: 'Reason4HopeCoaching' },
+	});
 
 	if (res.status === 404) {
 		return new Error('Page not found');

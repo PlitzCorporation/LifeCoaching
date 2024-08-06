@@ -30,9 +30,9 @@ const AboutIntro = (props: AboutIntroProps) => {
 						className="whitespace-pre-wrap mb-12 lg:mb-16"
 					></div>
 					<div className="flex flex-col lg:flex-row items-center mb-5 gap-9">
-						<SolidButton href="/book-a-session-today" label={'More About Me'} />
+						<SolidButton href="/about-reason4hope" label={'More About Me'} />
 						<OutlinedButton
-							href="/reason-4-hope-coaching"
+							href="/book-a-session-today"
 							label={'Book A Session'}
 						/>
 					</div>

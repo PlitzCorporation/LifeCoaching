@@ -35,7 +35,7 @@ exports[`AboutIntro should render 1`] = `
         <a
           class="relative flex items-center bg-plitz-primary text-white px-5 py-3 hover:rounded-xl border border-plitz-primary md:px-7 lg:px-9 md:py-4 hover:border-plitz-accent hover:text-plitz-accent hover:bg-white transition-all hover:transition-all group shadow-2xl"
           data-testid="aTag"
-          href="/book-a-session-today"
+          href="/about-reason4hope"
         >
           <span
             class="translate-x-2 group-hover:-translate-x-1 transition-all"
@@ -57,7 +57,7 @@ exports[`AboutIntro should render 1`] = `
         <a
           class="relative flex items-center bg-transparent text-white px-9 py-3 lg:py-4 hover:rounded-xl border border-plitz-primary hover:border-plitz-accent transition-all group shadow-2xl"
           data-testid="aTag"
-          href="/reason-4-hope-coaching"
+          href="/book-a-session-today"
         >
           <span
             class="translate-x-2 group-hover:-translate-x-1 transition-all text-plitz-primary group-hover:text-plitz-accent"

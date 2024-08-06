@@ -5,7 +5,7 @@ exports[`ContentOnly renders component 1`] = `
   class="bg-plitz-primary py-10 lg:py-20"
 >
   <div
-    class="plitz-container text-balance text-center text-white"
+    class="plitz-container text-balance whitespace-pre-wrap max-w-3xl text-center text-white"
   >
     <p>
       Hello, I am Batman, but my real name is Bruce Wayne

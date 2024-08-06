@@ -7,6 +7,7 @@ import LatestPosts from './LatestPosts';
 import InternalHero from './InternalHero';
 import ContentOnly from './ContentOnly';
 import PostsList from './PostsList';
+import CustomSectionOne from './CustomSectionOne';
 
 export {
 	HomeHero,
@@ -18,4 +19,5 @@ export {
 	InternalHero,
 	ContentOnly,
 	PostsList,
+	CustomSectionOne,
 };

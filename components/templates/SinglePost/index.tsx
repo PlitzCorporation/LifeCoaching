@@ -24,7 +24,7 @@ const SinglePostTemplate = async (props: SinglePostProps) => {
 				<h1 className="text-balance mb-5">{postData.title}</h1>
 				<PostMeta fullname={postData.fullname} createdAt={postData.createdAt} />
 				<div className="py-10 max-w-4xl mx-auto">
-					<ImagePlacer imageSrc={postData.othersizes.tablet} />
+					<ImagePlacer imageSrc={postData.featuredimg} />
 					<div
 						dangerouslySetInnerHTML={{ __html: postData.postintro }}
 						className="max-w-3xl mx-auto whitespace-pre-wrap text-left font-semibold bg-plitz-silver pt-8 px-10 pb-2"

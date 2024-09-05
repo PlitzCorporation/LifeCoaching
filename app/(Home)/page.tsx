@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 
-import { getPageByLink } from '@/helpers/pullPagesData';
+import { getPageByLink } from '@/helpers/apiCalls/pullPagesData';
 
 import HomePage from '@/components/templates/HomePage';
 

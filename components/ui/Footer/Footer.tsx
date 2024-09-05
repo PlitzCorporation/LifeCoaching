@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-import { getAllPages } from '@/helpers/pullPagesData';
+import { getAllPages } from '@/helpers/apiCalls/pullPagesData';
 
 import PlitzLogo from '@/components/logos/PlitzLogo';
 import Reason4Hope from '@/components/logos/Reason4Hope';

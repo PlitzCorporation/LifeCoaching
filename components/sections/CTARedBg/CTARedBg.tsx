@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { getAllCtas } from '@/helpers/pullCtasData';
+import { getAllCtas } from '@/helpers/apiCalls/pullCtasData';
 
 import OutlinedButton from '@/components/ui/OutlinedButton';
 import SolidButton from '@/components/ui/SolidButton';

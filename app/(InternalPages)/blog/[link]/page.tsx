@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 
-import { getPostByLink } from '@/helpers/pullBlogPost';
+import { getPostByLink } from '@/helpers/apiCalls/pullBlogPost';
 
 import stripHTML from '@/helpers/stripHTML';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { getPageByLink } from '@/helpers/pullPagesData';
+import { getPageByLink } from '@/helpers/apiCalls/pullPagesData';
 
 import { ContentOnly, InternalHero, PostsList } from '@/components/sections';
 

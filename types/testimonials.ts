@@ -9,4 +9,5 @@ export interface TestimonialProps {
 	author: string;
 	company: string;
 	worktitle: string;
+	createdAt: string;
 }

@@ -10,7 +10,7 @@ jest.mock('next/image', () => ({
 	},
 }));
 
-jest.mock('@/helpers/pullBlogPost', () => ({
+jest.mock('@/helpers/apiCalls/pullBlogPost', () => ({
 	getAllBlogPosts: jest.fn().mockReturnValue([
 		{
 			_id: '1',

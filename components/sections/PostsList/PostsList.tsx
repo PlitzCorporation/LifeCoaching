@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { getAllBlogPosts } from '@/helpers/pullBlogPost';
+import { getAllBlogPosts } from '@/helpers/apiCalls/pullBlogPost';
 
 import ImagePlacer from '@/components/ui/ImagePlacer';
 

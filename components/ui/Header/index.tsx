@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-import { getAllPages } from '@/helpers/pullPagesData';
+import { getAllPages } from '@/helpers/apiCalls/pullPagesData';
 
 import { NavProps, PageProps } from '@/types/pages';
 

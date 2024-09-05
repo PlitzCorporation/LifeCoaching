@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { getPageByLink } from '@/helpers/pullPagesData';
+import { getPageByLink } from '@/helpers/apiCalls/pullPagesData';
 
 import { PageProps } from '@/types/pages';
 import {
@@ -11,6 +11,7 @@ import {
 	LatestPosts,
 	QuoteBlock,
 } from '@/components/sections';
+import TestimonialsBlock from '@/components/sections/TestimonialsBlock';
 
 const HomePage = async () => {
 	const pageData: PageProps = await getPageByLink('home');
@@ -34,6 +35,7 @@ const HomePage = async () => {
 			<FeatureBoxes boxesData={featuredBoxesData} />
 			<AboutIntro {...aboutData} />
 			<QuoteBlock />
+			<TestimonialsBlock />
 			<LatestPosts />
 			<CTARedBg />
 		</main>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { notFound } from 'next/navigation';
 
-import { getPageByLink } from '@/helpers/pullPagesData';
+import { getPageByLink } from '@/helpers/apiCalls/pullPagesData';
 
 import {
 	ContentOnly,

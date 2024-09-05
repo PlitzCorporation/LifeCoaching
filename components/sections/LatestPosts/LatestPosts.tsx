@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-import { getPostsByCategory } from '@/helpers/pullBlogPost';
+import { getPostsByCategory } from '@/helpers/apiCalls/pullBlogPost';
 
 import BurgundyThickLine from '@/components/ui/decorations/BurgundyThickLine';
 import ImagePlacer from '@/components/ui/ImagePlacer';

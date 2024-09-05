@@ -1,11 +1,11 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import { getAllCtas } from '@/helpers/pullCtasData';
+import { getAllCtas } from '@/helpers/apiCalls/pullCtasData';
 import CTARedBg from './CTARedBg';
 
 // Mock the getAllCtas function
-jest.mock('@/helpers/pullCtasData', () => ({
+jest.mock('@/helpers/apiCalls/pullCtasData', () => ({
 	getAllCtas: jest.fn().mockImplementation(() =>
 		Promise.resolve([
 			{

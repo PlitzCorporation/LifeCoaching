@@ -1,7 +1,7 @@
 import React from 'react';
 import { notFound } from 'next/navigation';
 
-import { getPostByLink } from '@/helpers/pullBlogPost';
+import { getPostByLink } from '@/helpers/apiCalls/pullBlogPost';
 
 import PostMeta from '@/components/sections/PostsList/PostMeta';
 

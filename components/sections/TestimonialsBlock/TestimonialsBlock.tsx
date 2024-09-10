@@ -17,7 +17,7 @@ const TestimonialsBlock = async () => {
 
 	return (
 		<section className="bg-gradient-to-b from-plitz-primary to-[#4B1322] py-16 lg:py-32">
-			<div className="max-w-screen-xl plitz-container text-center  drop-shadow-plitz-darker text-white text-balance">
+			<div className="max-w-screen-xl plitz-container text-center drop-shadow-plitz-darker text-white text-balance">
 				<div className="w-max mx-auto mb-8">
 					<WhiteThickLine />
 				</div>
@@ -25,8 +25,8 @@ const TestimonialsBlock = async () => {
 					Testimonials
 				</div>
 				<h3 className="mb-11 lg:mb-20">We are happy to help you!</h3>
+				<TestimonialsCarousel latestTestimonials={testimonialsData} />
 			</div>
-			<TestimonialsCarousel randomrizedTestimonials={testimonialsData} />
 		</section>
 	);
 };

@@ -5,14 +5,18 @@ import Slider from 'react-slick';
 
 import RightArrow from '@/components/icons/RightArrow';
 
+// Static CSS
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 import { TestimonialProps } from '@/types/testimonials';
 
 interface TestimonialsCarouselProps {
-	randomrizedTestimonials: TestimonialProps[];
+	latestTestimonials: TestimonialProps[];
 }
 
 const TestimonialsCarousel = (props: TestimonialsCarouselProps) => {
-	const { randomrizedTestimonials } = props;
+	const { latestTestimonials } = props;
 	const settings = {
 		dots: true,
 		autoplay: true,
@@ -41,24 +45,25 @@ const TestimonialsCarousel = (props: TestimonialsCarouselProps) => {
 			</div>
 		),
 		customPaging: () => (
-			<div className="h-3 w-3 bg-plitz-green rounded-full"></div>
+			<div className="h-3 w-3 bg-plitz-secondary rounded-full"></div>
 		),
 	};
 
 	return (
 		<div className="mb-20 plitz-container">
 			<Slider {...settings}>
-				{randomrizedTestimonials.map((testimonial: TestimonialProps) => (
-					<div key={testimonial._id} className="flex flex-col px-10">
+				{latestTestimonials.map((testimonial: TestimonialProps) => (
+					<div
+						key={testimonial._id}
+						className="flex flex-col px-10 text-center w-full"
+					>
 						<blockquote
-							className="text-xs lg:text-sm leading-6 lg:leading-7 mb-7 lg:mb-10"
+							className="text-xs lg:text-sm text-white leading-6 lg:leading-7 mb-7 lg:mb-10"
 							dangerouslySetInnerHTML={{
 								__html: testimonial.details.replace(/<\/*[^>]+(>|$)/g, ''),
 							}}
 						></blockquote>
-						<small className="">
-							{testimonial.author} | Source: {testimonial.source}
-						</small>
+						<small className="text-plitz-accent">{testimonial.author}</small>
 					</div>
 				))}
 			</Slider>
@@ -78,7 +83,7 @@ const SampleNextArrow = (props: {
 			style={{ ...style, display: 'block' }}
 			onClick={props.onClick}
 		>
-			<RightArrow className="w-6 h-6 fill-plitz-green" />
+			<RightArrow className="w-6 h-6 fill-plitz-accent" />
 		</div>
 	);
 };
@@ -95,7 +100,7 @@ const SamplePrevArrow = (props: {
 			style={{ ...style, display: 'block' }}
 			onClick={props.onClick}
 		>
-			<RightArrow className="w-6 h-6 fill-plitz-green rotate-180" />
+			<RightArrow className="w-6 h-6 fill-plitz-accent rotate-180" />
 		</div>
 	);
 };

@@ -171,6 +171,11 @@
 	height: 100%;
 }
 
+.plitz-container .slick-slide div {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
 .plitz-container .slick-track {
 	display: flex;
 	align-items: center;

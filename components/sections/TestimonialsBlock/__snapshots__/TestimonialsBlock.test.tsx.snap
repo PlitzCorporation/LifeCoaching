@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TestimonialsBlock should render the TestimonialsBlock with sorted and sliced testimonials 1`] = `
+<div>
+  <section
+    class="bg-gradient-to-b from-plitz-primary to-[#4B1322] py-16 lg:py-32"
+  >
+    <div
+      class="max-w-screen-xl plitz-container text-center drop-shadow-plitz-darker text-white text-balance"
+    >
+      <div
+        class="w-max mx-auto mb-8"
+      >
+        <div
+          class="block w-32 h-1 bg-gradient-to-r from-white/5 to-white/100"
+        />
+      </div>
+      <div
+        class="text-white font-bold mt-7 lg:mt-10 mb-4"
+      >
+        Testimonials
+      </div>
+      <h3
+        class="mb-11 lg:mb-20"
+      >
+        We are happy to help you!
+      </h3>
+      <div
+        class="mb-20 plitz-container"
+      >
+        <div
+          class="slick-slider slick-initialized"
+        >
+          <div
+            class="slick-arrow slick-prev"
+            style="display: block;"
+          >
+            ←
+          </div>
+          <div
+            class="slick-list"
+          >
+            <div
+              class="flex flex-col px-10 text-center w-full"
+            >
+              <blockquote
+                class="text-xs lg:text-sm text-white leading-6 lg:leading-7 mb-7 lg:mb-10"
+              >
+                Great service!
+              </blockquote>
+              <small
+                class="text-plitz-accent"
+              >
+                Test User 1
+              </small>
+            </div>
+            <div
+              class="flex flex-col px-10 text-center w-full"
+            >
+              <blockquote
+                class="text-xs lg:text-sm text-white leading-6 lg:leading-7 mb-7 lg:mb-10"
+              >
+                Amazing experience!
+              </blockquote>
+              <small
+                class="text-plitz-accent"
+              >
+                Test User 2
+              </small>
+            </div>
+            <div
+              class="flex flex-col px-10 text-center w-full"
+            >
+              <blockquote
+                class="text-xs lg:text-sm text-white leading-6 lg:leading-7 mb-7 lg:mb-10"
+              >
+                Highly recommend!
+              </blockquote>
+              <small
+                class="text-plitz-accent"
+              >
+                Test User 3
+              </small>
+            </div>
+          </div>
+          <div
+            class="slick-arrow slick-prev"
+            style="display: block;"
+          >
+            →
+          </div>
+          <div
+            class="slick-dots"
+          >
+            <ul
+              class="flex gap-2 lg:gap-4 justify-center w-full flex-wrap items-center h-max"
+            >
+              <li
+                class=""
+              >
+                <div
+                  class="h-3 w-3 bg-plitz-secondary rounded-full"
+                />
+              </li>
+              <li
+                class="slick-active"
+              >
+                <div
+                  class="h-3 w-3 bg-plitz-secondary rounded-full"
+                />
+              </li>
+              <li
+                class=""
+              >
+                <div
+                  class="h-3 w-3 bg-plitz-secondary rounded-full"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;

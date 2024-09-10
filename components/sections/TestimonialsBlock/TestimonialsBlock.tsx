@@ -4,6 +4,7 @@ import { getAllTestimonials } from '@/helpers/apiCalls/pullTestimonialsData';
 
 import { WhiteThickLine } from '@/components/ui/decorations';
 import TestimonialsCarousel from './TestimonialsCarousel';
+
 import { TestimonialProps } from '@/types/testimonials';
 
 const TestimonialsBlock = async () => {
@@ -11,9 +12,10 @@ const TestimonialsBlock = async () => {
 	const testimonialsData = testimonials
 		.sort(
 			(a, b) =>
-				new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime(),
+				// new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime(),
+				a.order - b.order,
 		)
-		.slice(0, 7);
+		.slice(0, 5);
 
 	return (
 		<section className="bg-gradient-to-b from-plitz-primary to-[#4B1322] py-16 lg:py-32">

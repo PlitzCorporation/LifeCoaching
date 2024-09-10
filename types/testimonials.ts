@@ -3,11 +3,11 @@ export interface TestimonialProps {
 	isLive: boolean;
 	order: number;
 	details: string;
-	picture: string;
-	rating: number;
-	source: string;
 	author: string;
-	company: string;
-	worktitle: string;
 	createdAt: string;
+	picture?: string;
+	rating?: number;
+	source?: string;
+	company?: string;
+	worktitle?: string;
 }

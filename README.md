@@ -1,6 +1,6 @@
-# Reason4Hope by Plitz7
+# Life Coaching by Plitz7
 
-This project is based on Next.JS + TypeScript + Tailwind CSS. All front end development and design has been created by Plitz7 for Reason4Hope.
+This project is based on Next.JS + TypeScript + Tailwind CSS. All front end development and design has been created by Plitz7 and it can be used only with our authorization.
 
 ## Before Anything Else
 
@@ -18,6 +18,6 @@ yarn dev
 
 Open [http://localhost:3008](http://localhost:3008) with your browser to see the result.
 
-Notice that the port is not `3000`, please do not change the port because you will break the production site.
+Notice that the port is not `3000`, please do not change the port unless you are not hosting with us.
 
 This project is already connected to our content management system, https://thedavid.plitz7.com. Most of text and images are through the system, verify first you can make the changes there before anything else.
